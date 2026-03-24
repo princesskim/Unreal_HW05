@@ -22,9 +22,9 @@ void AMyActor::BeginPlay()
 		// FString::Printf()의 %s는 TCHAR* 타입 문자열 포인터를 요구함
 		// FString == 클래스 객체
 		// 약속 "FString 앞에 * 붙이면 내부 문자열 주소 반환"
-		GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::White, FString::Printf(TEXT("Actor: %s"), *GetName())); //GetName() 결과는 FString, 역참조 필요
+		GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::White, FString::Printf(TEXT("Actor: %s"), *GetName())); //GetName() 결과는 FString
 		GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Orange, TEXT(">> State 0"));
-		GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Blue, FString::Printf(TEXT("Actor: %s"), *GetActorLocation().ToString())); //ToString() 결과는 FString, 역참조 필요
+		GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Blue, FString::Printf(TEXT("Actor: %s"), *GetActorLocation().ToString())); //ToString() 결과는 FString
 	}
 
 	/*
